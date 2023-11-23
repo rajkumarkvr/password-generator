@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  user-select: none;
+  background-color: #f4f4f4;
+}
+.wrapper {
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+ 
+}
+.heading {
+  font-size: 11px;
+  text-align: center;
+  text-shadow: 1.25px 1.25px 10px rgba(0, 0, 0, 0.2);
+  color: #3c6382;
+  margin: 10px 0;
+  letter-spacing: 1px;
+}
+.display-area {
+  margin: 20px 0;
+}
+.txt-output {
+  outline: none;
+  border: none;
+  border: 1px solid rgb(191, 187, 187);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 7px 10px;
+  width: 50vw;
+  min-width: 185px;
+  margin-left: 5px;
+}
+
+.btn-cpy {
+  border: none;
+  border-radius: 8px;
+  padding: 7px;
+  width: 19vw;
+  min-width: 20px;
+  background-color: #3c6382;
+  color: #fff;
+  transition: opacity 0.2s linear;
+}
+.btn-cpy:active {
+  opacity: 0.5;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.static-txt{
+    font-size: 10px;
+    color:#3c6382 ;
+   vertical-align: top;
+}
+.length-adjustor-area{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 15px;
+    margin: 10px;
+}
+
+
+.characters-mixer-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.char-txt{
+    font-size: 11px;
+
+    color:#3c6382 ;
+}
+.options{
+   font-size: 11px;
+   display: flex;
+   column-gap: 7px;
+}
+
+.gen-btn{
+    margin-top: 30px;
+    text-align: center;
+}
+#btn-generate{
+    padding: 5px 25px;
+    border-radius: 8px;
+    border: none;
+    background-color:#1dd1a1 ;
+    color:#fff ;
+    transition: opacity 0.2s linear;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+   width: 100px;
+
+}
+
+.refresh-icon{
+  color: #fff;
+}
+
+#btn-generate:active {
+opacity: 0.5;
+  transition: transform 0.4s linear;
+ 
+}
+#btn-generate:active .refresh-icon{
+  transform: rotate(100deg);
+}
+
+#pass-len{
+  color: #26de81;
+  font-size: 13px;
+}

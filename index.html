@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Rajkumar" />
+    <title>Password Generator Free</title>
+    <link rel="webpage icon" type="svg" href="lock-solid.svg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="heading"><h1>Password Generator</h1></div>
+      <div class="display-area">
+        <input
+          type="text"
+          class="txt-output"
+          id="final-ouput-txt"
+          placeholder="Your password is here"
+        />
+        <button id="copy-btn" class="btn-cpy">Copy</button>
+      </div>
+      <div class="length-adjustor-area">
+        <div class="len-txt">
+          <label class="static-txt"
+            >Password Length: <span id="pass-len">1</span></label
+          >
+        </div>
+        <div><input type="range" id="pass-len-slider" min="1" max="20"/></div>
+      </div>
+      <div class="characters-mixer-area">
+        <label class="char-txt">Characters includes: </label>
+        <div class="options">
+          <input type="checkbox" name="group1" class="char alpha" value="alpha"/><label
+            >ABC</label
+          >
+          <input type="checkbox" name="group1" class="char numeric" value="numeric"/><label
+            >123</label
+          >
+          <input type="checkbox" name="group1" class="char symbol" value="symbol"/><label
+            >#$!</label
+          >
+        </div>
+      </div>
+      <div class="gen-btn">
+        <button id="btn-generate"><img class="refresh-icon" src="arrow.svg" alt="" width="20px" height="20px"></button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
